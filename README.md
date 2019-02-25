@@ -1,3 +1,6 @@
+**`https://learn.openshift.com/middleware/courses/middleware-spring-boot/spring-db-access`**
+
+
 Step 1 \
 Review the base structure of the application
 For your convenience, this scenario has been created with a base project using the Java programming language and the Apache Maven build tool. Initially the project contains a couple web-oriented files which are out of scope for this module. See the Spring MVC / Rest Services module for more details. These files are in place to give a graphical view of the Database content.
