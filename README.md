@@ -8,7 +8,7 @@
 
 **How to Set up an environment property on linux machine**
 
-**oc (openshift cli):** `.\minishift oc-env`
+**oc (openshift client):** `.\minishift oc-env`
 
 **`$Env:PATH = "C:\Users\ilya.valdman\.minishift\cache\oc\v3.11.0\windows;$Env:PATH"`**
 
