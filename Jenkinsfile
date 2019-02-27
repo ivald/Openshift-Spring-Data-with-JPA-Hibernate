@@ -24,11 +24,15 @@ pipeline {
             }
         }
         stage('Build Image') {
-            sh "oc start-build openshiftapp --from-file=target/openshift-0.0.1-SNAPSHOT.jar --follow"
+            steps {
+                sh "oc start-build openshiftapp --from-file=target/openshift-0.0.1-SNAPSHOT.jar --follow"
+            }
         }
         stage('Deploy Image') {
-            openshiftDeploy depCfg: 'openshiftapp'
-            openshiftVerifyDeployment depCfg: 'openshiftapp', replicaCount: 1, verifyReplicaCount: true
+            steps {
+                openshiftDeploy depCfg: 'openshiftapp'
+                openshiftVerifyDeployment depCfg: 'openshiftapp', replicaCount: 1, verifyReplicaCount: true
+            }
         }
     }
 }
