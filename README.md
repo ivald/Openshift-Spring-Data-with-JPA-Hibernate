@@ -1,10 +1,10 @@
 **Openshift Tutorial link:**
 
-**`https://learn.openshift.com/middleware/courses/middleware-spring-boot/spring-db-access`**
+`https://learn.openshift.com/middleware/courses/middleware-spring-boot/spring-db-access`
 
 **Run virtual box app**
 
-**`.\minishift.exe start --vm-driver virtualbox`**
+`.\minishift.exe start --vm-driver virtualbox`
 
 **How to Set up an environment property on linux machine**
 
@@ -14,11 +14,11 @@
 
 **Login in Openshift on local machine**
 
-**`oc login https://192.168.99.100:8443 --insecure-skip-tls-verify=true -u ilyav -p adm`**in
+`oc login https://192.168.99.100:8443 --insecure-skip-tls-verify=true -u ilyav -p admin`
 
 **Create New Project**
 
-**`oc new-project dev --display-name="Dev - Spring Boot App"`**
+`oc new-project dev --display-name="Dev - Spring Boot App"`
 
 **Inside New Project we can add new apps, such as:**
 
@@ -33,8 +33,8 @@
 
 **How Build and Deploy existing project on Openshift**
 
-**`mvn package fabric8:deploy -Popenshift -DskipTests`**
+`mvn package fabric8:deploy -Popenshift -DskipTests`
 
 **Logout from Openshift**
 
-**`oc logout`**
+`oc logout`
