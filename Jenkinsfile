@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                openshiftBuild  bldCfg: 'openshift'
+                sh "oc start-build openshift --from-file=target/openshift-0.0.1-SNAPSHOT.jar --follow"
             }
         }
         stage('Deploy Image') {
