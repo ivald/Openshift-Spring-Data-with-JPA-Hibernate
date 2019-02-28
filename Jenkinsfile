@@ -31,7 +31,6 @@ pipeline {
         stage('Deploy Image') {
             steps {
                 openshiftDeploy depCfg: 'openshift'
-                openshiftVerifyDeployment depCfg: 'openshift', replicaCount: 1, verifyReplicaCount: true
             }
         }
     }
