@@ -23,6 +23,11 @@ pipeline {
                 }
             }
         }
+        stage('Build Image') {
+            steps {
+                sh "oc start-build openshift --from-file=target/openshift-0.0.1-SNAPSHOT.jar --follow"
+            }
+        }
         stage('Deploy Image') {
             steps {
                 openshiftDeploy depCfg: 'openshift'
