@@ -36,15 +36,26 @@
 `mvn package fabric8:deploy -Popenshift -DskipTests`
 
 **Info command**
+`oc get all`\
+
+**Examining the Pod**
+`oc get pods`\
+`oc get pod parksmap-1-6xgcn -o yaml`\
+
+**Services**
 
 `oc get services`\
-`oc get pods`\
-`oc get all`\
+`oc get service parksmap -o yaml`\
+`oc describe service parksmap`\
 `oc describe svc parksmap`\
 `oc get svc parksmap -o yaml`\
-`oc get pod parksmap-1-6xgcn -o yaml`\
-`oc get service parksmap -o yaml`\
+
+**Exploring Deployment-related Objects**
+`oc get dc`\
 `oc get rc`\
+
+**Scaling the Application**
+
 `oc scale --replicas=2 dc/parksmap`\
 `oc get endpoints parksmap`\
 `oc delete pod parksmap-1-hx0kv && oc get pods`
