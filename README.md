@@ -37,7 +37,7 @@
 
 **Info command**
 
-`oc get all"`
+`oc get all"`\
 `oc describe svc parksmap"`
 
 **Logout from Openshift**
