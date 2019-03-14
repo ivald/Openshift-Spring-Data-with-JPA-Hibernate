@@ -69,6 +69,7 @@
 `oc get route`
 
 **Logs**
+
 `oc get pods`\
 `oc logs parksmap-1-4mkdk`
 
