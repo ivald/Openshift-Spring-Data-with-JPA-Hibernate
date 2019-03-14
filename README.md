@@ -77,6 +77,17 @@
 
 `oc policy add-role-to-user view userXY`
 
+**Remote Shell Session to a Container Using the CLI**
+
+`oc get pods`\
+`oc rsh parksmap-2-4mkdk`\
+ sh-4.2$ ls /
+
+**Execute a Command in a Container**
+
+`oc exec parksmap-1-4mkdk -- ls -l /parksmap.jar`\
+-rw-r--r--. 1 root root 21753930 Feb 20  2017 /parksmap.jar
+
 **Logout from Openshift**
 
 `oc logout`
