@@ -43,7 +43,11 @@
 `oc describe svc parksmap`\
 `oc get svc parksmap -o yaml`\
 `oc get pod parksmap-1-6xgcn -o yaml`\
-`oc get service parksmap -o yaml`
+`oc get service parksmap -o yaml`\
+`oc get rc`\
+`oc scale --replicas=2 dc/parksmap`\
+`oc get endpoints parksmap`\
+`oc delete pod parksmap-1-hx0kv && oc get pods`
 
 **Logout from Openshift**
 
