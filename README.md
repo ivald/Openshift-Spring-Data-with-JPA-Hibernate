@@ -41,6 +41,7 @@
 `oc get pods`\
 `oc get all`\
 `oc describe svc parksmap`\
+`oc get svc parksmap -o yaml`\
 `oc get pod parksmap-1-6xgcn -o yaml`\
 `oc get service parksmap -o yaml`
 
