@@ -68,6 +68,10 @@
 `route "parksmap" exposed`\
 `oc get route`
 
+**Logs**
+`oc get pods`\
+`oc logs parksmap-1-4mkdk`
+
 **Logout from Openshift**
 
 `oc logout`
