@@ -35,6 +35,11 @@
 
 `mvn package fabric8:deploy -Popenshift -DskipTests`
 
+**Info command**
+
+`oc get all"`
+`oc describe svc parksmap"`
+
 **Logout from Openshift**
 
 `oc logout`
