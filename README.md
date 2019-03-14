@@ -48,6 +48,9 @@
 `oc scale --replicas=2 dc/parksmap`\
 `oc get endpoints parksmap`\
 `oc delete pod parksmap-1-hx0kv && oc get pods`
+**Creating a Route**
+`route "parksmap" exposed`\
+`oc get route`
 
 **Logout from Openshift**
 
