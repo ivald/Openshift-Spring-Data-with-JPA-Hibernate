@@ -73,6 +73,10 @@
 `oc get pods`\
 `oc logs parksmap-1-4mkdk`
 
+**Grant User View Permissions**
+
+`oc policy add-role-to-user view userXY`
+
 **Logout from Openshift**
 
 `oc logout`
