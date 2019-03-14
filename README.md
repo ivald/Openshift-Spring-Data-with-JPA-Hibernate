@@ -37,8 +37,12 @@
 
 **Info command**
 
+`oc get services"`\
+`oc get pods"`\
 `oc get all"`\
-`oc describe svc parksmap"`
+`oc describe svc parksmap"`\
+`oc get pod parksmap-1-6xgcn -o yaml"`\
+`oc get service parksmap -o yaml"`
 
 **Logout from Openshift**
 
