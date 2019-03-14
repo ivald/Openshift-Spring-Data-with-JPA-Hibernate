@@ -88,6 +88,11 @@
 `oc exec parksmap-1-4mkdk -- ls -l /parksmap.jar`\
 -rw-r--r--. 1 root root 21753930 Feb 20  2017 /parksmap.jar
 
+**Builds**
+
+`oc get builds`\
+`oc logs -f builds/nationalparks-1`
+
 **Logout from Openshift**
 
 `oc logout`
