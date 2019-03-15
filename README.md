@@ -93,6 +93,27 @@
 `oc get builds`\
 `oc logs -f builds/nationalparks-1`
 
+**Import image from redhat repository**
+
+1. `oc login https://192.168.99.100:8443 --insecure-skip-tls-verify=true -u ilyav -p admin`
+2. `oc import-image openjdk18-openshift --from=registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift --confirm`
+
+**Import templates from another account**
+
+1. `oc login https://master.karyyz-d0ea.openshiftworkshop.com --insecure-skip-tls-verify=true -u user7 -p openshift`
+2. `oc get templates -n openshift`\
+    -n is a namespace in kubernetes or project in openshift
+3. `oc get template mongodb-ephemeral -n openshift -o yaml`
+4. `oc get template mongodb-ephemeral -n openshift -o yaml > mongodb-ephemeral.yml`
+5. `ls`
+6. `oc login https://192.168.99.100:8443 --insecure-skip-tls-verify=true -u ilyav -p admin`
+7. `oc create -f mongodb-ephemeral.yml -n openshift`
+8. `oc login https://master.karyyz-d0ea.openshiftworkshop.com --insecure-skip-tls-verify=true -u user7 -p openshift`
+9. `oc get templates -n openshift`
+10. `oc get template openjdk18-web-basic-s2i -n openshift -o yaml > openjdk.yml`
+11. `cat openjdk.yml`
+12. `oc edit template openjdk18-web-basic-s2i -n openshift`
+
 **Logout from Openshift**
 
 `oc logout`
