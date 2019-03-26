@@ -1,3 +1,5 @@
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/1200px-OpenShift-LogoType.svg.png" width="80">
+
 **Openshift Tutorial link:**
 
 `https://learn.openshift.com/middleware/courses/middleware-spring-boot/spring-db-access`
