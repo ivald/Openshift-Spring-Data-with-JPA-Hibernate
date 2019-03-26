@@ -1,6 +1,6 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/OpenShift-LogoType.svg/1200px-OpenShift-LogoType.svg.png" width="80"> 
 
-Tutorial example [link](https://learn.openshift.com/middleware/courses/middleware-spring-boot/spring-db-access)
+[Tutorial](https://learn.openshift.com/middleware/courses/middleware-spring-boot/spring-db-access)
 
 **Run virtual box app**
 
